@@ -6,13 +6,10 @@ class tru_struktur_def {
   // public $ChannelID;
   
   function __construct() {
-    require_once('tools.class.php');
-    $this->tools = new tru_tools();
-
-    require_once('db.php');
-    $this->DB = new db();
+    $reg = Registry::getInstance();
     
-    require_once('DataCache.inc.php');
+    $this->tools     = $reg->get('tools');
+    $this->DB        = $reg->get('db');
     $this->DataCache = new tru_datacache();
   }
   

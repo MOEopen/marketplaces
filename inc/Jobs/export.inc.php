@@ -4,7 +4,7 @@ class export {
   function __construct() {
     $reg = Registry::getInstance();
     
-    require_once('struktur_def.class.php');
+    require_once('inc/Objects/struktur_def.class.php');
     $reg->set('struktur_def', new tru_struktur_def());
   }
   
@@ -13,7 +13,7 @@ class export {
     // $reg->get('Debug')->monitor($this->aAktiveArticles);
     
     $this->enrichArticle();
-    // $reg->get('Debug')->monitor($this->aAllProducts);
+    $reg->get('Debug')->monitor($this->aAllProducts);
     
     // $this->BuildParent();
     // $reg->get('Debug')->monitor($this->aAllProducts);

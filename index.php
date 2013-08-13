@@ -15,9 +15,6 @@
       <a href="index.php?Job=TransDb" style="border:1px solid black; padding:5px 20px; margin-right:20px; background-color:#E0E0E0;">Transfer Db</a>
     </div>
     <?php 
-      ini_set("display_errors",true);
-      ini_set("error_reporting",E_ALL);
-      $EOL = "<br />\n";
       require_once('inc/controller.php');
     ?>
   </body>

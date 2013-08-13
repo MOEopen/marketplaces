@@ -7,6 +7,10 @@
     }
   }
   
+  ini_set("display_errors",true);
+  ini_set("error_reporting",E_ALL);
+  $EOL = "<br />\n";
+      
   require_once('inc/Registry.class.php');
   $reg = Registry::getInstance();
   
@@ -25,9 +29,10 @@
   require_once('inc/db.php');
   $reg->set('db', new db());
   
-  exit();
+  require_once('inc/Objects/channel.php');
+  $reg->set('channel', new Channel());
   
-  $ChannelId = 1;
+  $ChannelId = $reg->get('channel')->getChannelID();
   
   $Classname = "inc/Jobs/".getJob().".inc.php";
   if ( file_exists( $Classname ) ) {
