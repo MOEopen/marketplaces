@@ -1,0 +1,18 @@
+#TreeBox       { float:left; width:175px; margin:10px 0 0 0;}
+#Content       { float:left; margin:10px 0 0 20px; }
+#AttributesBox { float:left; margin:20px; }
+span.FieldNames { display:inline-block; width:200px; }
+.TableAttributeCol1 { width:250px; }
+.TableAttributeCol2 { width:500px; }
+.TableAttributeCol2 input { width:500px; }
+.FormAttributes { margin-bottom:0; }
+#tree a { padding:1px 1px 1px 4px; display: block; font-size: 15px;}
+#tree a.Level-1 { width: 152px; }
+#tree a.Level-2 { width: 136px; }
+#tree a.Level-3 { width: 120px; }
+#tree a.STATUS-2 { background-color:#E0E0E0; }
+#tree a.hover   { background-color: yellow; }
+#tree a.Aktiv  { background-color: red; }
+input.Icon { width: 20px; height: 20px; text-decoration: none; display: block; background-repeat:no-repeat; background: url('img/diagona.png'); }
+input.Delete { background-position: -18px -258px; }
+input.Save   { background-position: -246px -232px; }
